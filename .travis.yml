@@ -1,9 +1,11 @@
 language: ruby
+
 rvm:
-- 2.3.3
+- 2.5
 
-install: gem install jekyll
-script: jekyll build
+install: gem install jekyll jekyll-paginate jemoji html-proofer
+script: jekyll serve --baseurl "" --detach && htmlproofer ./_site --disable-external --empty-alt-ignore
 
-sudo: false
-exclude: [vendor]
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true JEKYLL_ENV=production
