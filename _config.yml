@@ -132,7 +132,7 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/Binus_Bandung.png"
+  - image: "/img/timeline/Binus_Bandung.jpg"
     date: "July 2017- Today"
     description: "Binus at Bandung!"
   #- image: "/img/timeline/baracktocat.jpg"
