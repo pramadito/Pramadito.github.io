@@ -59,7 +59,7 @@ lines: # You can add HTML Tags in the Text
   - text: "Scroll Down for more information"
   - text: "Creating New Things!"
 
-me-img: "/img/jetpacktocat.png"
+me-img: "/img/author.jpg"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
