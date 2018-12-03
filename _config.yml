@@ -132,6 +132,9 @@ syntax-highlight: True
 ############
 
 events:
+  - image: "/img/timeline/programming.jpg"
+    date: "2015 - Today"
+    description: "Started Learning Programming"
   - image: "/img/timeline/binus_bandung.jpg"
     date: "July 2017- Today"
     description: "Binus at Bandung!"
