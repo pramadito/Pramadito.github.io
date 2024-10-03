@@ -30,7 +30,7 @@ force-https: True
 
 lang: "en"
 author: "Pramadito"
-title: "{ Pramadito }"
+title: "Pramadito"
 description: "Blog and website of Pramadito, blogging mainly for tech. Opinions expressed are mine."
 keywords: "Pramadito,personal, profile"
 favicon: "/img/favicon.ico"
