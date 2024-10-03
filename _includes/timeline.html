@@ -1,29 +1,35 @@
-
 <!-- Timeline Start -->
 
-<section id="{{ page.section-type }}" class="container content-section text-center">
+<section
+  id="{{ page.section-type }}"
+  class="container content-section text-center"
+>
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-
       {{ page.content | markdownify }}
 
       <ul class="timeline">
-
         {% for event in site.events %}
           {% assign loopindex = forloop.index | modulo: 2 %}
           {% capture class %}
-          {% if loopindex == 0 %}
-            timeline-inverted
-          {% endif %}
+            {% if loopindex == 0 %}
+              timeline-inverted
+            {% endif %}
           {% endcapture %}
 
           <li class="{{ class }}">
             <div class="timeline-image">
-              <img class="img-circle img-responsive" src="{{site.baseurl}}{{ event.image }}" alt="">
+              <img
+                class="img-circle img-responsive"
+                src="{{site.url}}{{ event.image }}"
+                alt=""
+                width="156"
+                height="156"
+              />
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4>{{ event.date }}</h4>
+                <strong>{{ event.date | upcase }}</strong>
               </div>
               <div class="timeline-body">
                 {{ event.description | markdownify }}
@@ -34,7 +40,13 @@
 
         <li class="timeline-inverted">
           <div class="timeline-image">
-            <img class="img-circle img-responsive" src="{{site.baseurl}}{{ site.timeline-img }}" alt="">
+            <img
+              class="img-circle img-responsive"
+              src="{{site.url}}{{ site.timeline-img }}"
+              alt=""
+              width="156"
+              height="156"
+            />
           </div>
         </li>
       </ul>

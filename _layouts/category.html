@@ -1,7 +1,6 @@
-
 <!-- Category Layout Start -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.lang }}">
 
   {% include head.html %}
@@ -19,18 +18,17 @@
           <h3 id="#{{ category }}">Category: {{ category }}</h3>
 
           <div>
-            {% for post in site.posts %}
-              {% if post.category == category %}
-                {% include post-list.html%}
-              {% endif %}
+            {% for post in site.posts %} 
+              {% if post.category == category %} 
+                {% include post-list.html%} 
+              {% endif %} 
             {% endfor %}
           </div>
-
         </div>
       </div>
     </section>
 
-    {% include footer.html %}
+    {% include footer.html %} 
 
     {% include js.html %}
 
